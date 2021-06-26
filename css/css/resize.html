@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        :root{
+            --unit: 400px;
+        }
+        .wrap{
+            border: 1px dotted #333;
+            height: var(--unit);
+        }
+        .wrap-right{
+            padding: 16px;
+            box-sizing: border-box;
+            overflow: hidden;
+
+        }
+        .wrap-left{
+            height: var(--unit);
+            position: relative;
+            overflow: hidden;
+            float: left;
+        }
+        .resize-content{
+            position:absolute;
+            top: 0;
+            right: 5px;
+            bottom: 0;
+            left: 0;
+            padding: 16px;
+            overflow-x: hidden;
+        }
+        .resize-bar{
+            width: 200px;
+            height: inherit;
+            resize: horizontal;
+            overflow: scroll;
+            cursor: ew-resize;
+            opacity: 0;
+        }
+        .resize-bar::-webkit-scrollbar{
+            width: var(--unit);
+            height: var(--unit);
+        }
+        .resize-line{
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom:0;
+            left: 0;
+            border-left: 2px solid #eee;
+            border-right: 1px solid #bbb;
+            pointer-events: none;
+        }
+        .resize-bar:hover ~ .resize-line{
+            border-right: 1px solid aqua;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="wrap">
+       <div class="wrap-left">
+           <div class="resize-bar"></div>
+           <div class="resize-line"></div>
+           <div class="resize-content">过个好年！明年大吉大利！咱过个好年！明年大吉大利！咱过个好年！明年大吉大利！</div>
+       </div>
+       <div class="wrap-right">
+       过个好年！明年大吉大利！咱过个好年！明年大吉大利！咱过个好年！明年大吉大利！
+       </div>
+    </div> 
+
+</body>
+</html>

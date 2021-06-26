@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       .wrap{
+            --fontSize: 90px;
+            font-size: var(--fontSize);
+            margin-top: var(--fontSize);
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(to right, yellow, blue, purple, green, red, orange);
+            animation: hue 1s linear infinite;
+            text-align: center;
+       } 
+       @keyframes hue {
+          from{
+              filter: hue-rotate(0)
+          } 
+          to{
+              filter: hue-rotate(360deg)
+          }
+       }
+
+    </style>
+
+</head>
+<body>
+   <div class="wrap">
+        过个好年！大吉大利！
+   </div> 
+</body>
+</html>

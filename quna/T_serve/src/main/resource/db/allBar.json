@@ -1,0 +1,62 @@
+{
+    "allBar":[
+        {
+            "id" :"20",
+            "name": "洛江石龙谷",
+            "comment" :"343046条评论",
+            "url":"http://img1.qunarzz.com/sight/p0/1705/88/88e65ed5da3ff5d7a3.img.jpg_250x250_cd1a0772.jpg",
+            "text":"洛江石龙谷森林游乐园",
+            "recom":"桥上有宋代四大书法家之一的蔡襄自撰自书的《万安桥记》，欣赏古代桥梁的建筑艺术"
+         },
+         {
+            "id" :"17",
+            "name": "石狮世茂摩天轮",
+            "url":"http://img1.qunarzz.com/sight/p0/1701/48/48201ed52a31518ba3.img.jpg_250x250_2a09a5e9.jpg",
+            "text":"【泉州海西之眼】石狮世茂摩天轮",
+            "comment" :"343046条评论",
+            "recom": "乐园共有近40项经典游乐设备，带给游客淋漓尽致的快乐刺激感官体验，超1500种主题商品齐聚乐园"
+         },{
+            "id" :"18",
+            "name": "泉州海丝野生动物世界",
+            "comment" :"343046条评论",
+            "url":"http://img1.qunarzz.com/sight/p0/1702/3f/3ffc2297280d414aa3.img.jpg_250x250_380f7aad.jpg",
+            "text":"泉州海丝野生动物世界",
+            "recom": "集动物野趣观赏、精彩表演、休闲娱乐、科普教育为一体的大型综合性主题公园"
+         },{
+            "id" :"19",
+            "name": "南安香草",
+            "comment" :"343046条评论",
+            "url":"http://img1.qunarzz.com/sight/p0/1501/8b/8b1e9d648f923e68.water.jpg_250x250_1f452ec0.jpg",
+            "text":"南安香草世界",
+            "recom":"香草世界度假村是国家AAA级景区，是一个集生态茶园、果园、旅游观光休闲度假于一体的综合性旅游景区"
+         },{
+            "id":"15",
+            "name":"德化九仙山",
+            "url":"http://img1.qunarzz.com/sight/p0/1504/cb/cbd992d4861cbcaf.water.jpg_250x250_ff878db5.jpg",
+            "text":"德化九仙山",
+            "comment" :"343046条评论",
+            "recom": "攀登刺激冒险的天梯，欣赏日出、云海、雾松三绝，感受登山观景的乐趣  "
+         },{
+            "id":"16",
+            "name":"清源山",
+            "url":"http://img1.qunarzz.com/sight/p0/1501/88/88eaebdf8c0ac671.water.jpg_250x250_ac1daa78.jpg",
+            "text":"清源山",
+            "comment" :"343046条评论",
+            "recom": "泉州唯一一个5A级景区，这里有我国现存最大、年代最久的道教石雕造像——老君岩"
+         },{
+            "id" :"21",
+            "name": "崇武古城",
+            "url":"http://img1.qunarzz.com/sight/p0/1411/97/1f50d2cb9964b3d0ca21b51587060961.water.jpg_250x250_4640e63d.jpg",
+            "comment" :"343046条评论",
+            "text":"崇武古城",
+            "recom":"崇武古城是中国现存较完整的丁字型石砌古城，是明朝廷为抗击倭患，在万里海疆修筑的60多座卫所城堡中仍保存完好的一座"
+         },{
+            "id" :"22",
+            "name": "泉州少林",
+            "url":"http://img1.qunarzz.com/sight/p0/1611/77/772d260d9e4903f2a3.water.jpg_250x250_1e21649f.jpg",
+            "comment" :"343046条评论",
+            "text":"泉州少林寺",
+            "recom":"少林寺是中国佛教禅宗祖庭和中国功夫的发源地，现为世界文化遗产、全国重点文物保护单位、国家AAAAA级旅游景区"
+         }
+    ]
+}

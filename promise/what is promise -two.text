@@ -1,0 +1,20 @@
+promise 简介:
+
+	new Promise(
+     	// 称 执行器 executor
+		function(resolve,reject){
+		  //一段耗时很长的异步操作
+
+		  //省略好多代码
+
+			resolve(); //数据处理完成,调用的方法，会改变当前promise实例的状态
+
+			reject();//数据处理失败,调用的方法，会改变当前promise实例的状态
+		}
+	)
+
+	.then(function(){
+		//成功后，下一步操作
+	},function(){
+		//失败，做相应的处理
+	});

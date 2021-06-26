@@ -1,0 +1,10 @@
+.nav{
+    width: 100px;
+    height: 100px;
+    text-emphasis: none;
+}
+.item{
+    width: 200px;
+    height: 200px;
+    background: green;
+}

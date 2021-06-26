@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minmum-scale = 1, max-scale =1 , user-scalable = no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>robot_room</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: #333;
+        }
+
+        .wrap {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .wrap h5 {
+            background: #000;
+            color: #fff;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .content {
+            position: absolute;
+            top: 45px;
+            bottom: 36px;
+            max-width: 600px;
+            width: 100%;
+            background: #F2F2F2;
+            overflow: auto;
+            padding-bottom: 25px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+        }
+
+        .footer input:nth-child(1) {
+            flex-grow: 1;
+            width: 100%;
+            max-width: 600px;
+            height: 35px;
+            outline: none;
+        }
+
+        .my_content,
+        .robot_content {
+            padding: 30px 10px 0;
+            display: flex;
+            text-align: right;
+        }
+
+        .my_content {
+            justify-content: flex-end;
+        }
+
+        .my_content p,
+        .robot_content p {
+            margin: 0;
+            padding: 5px 10px;
+            border-radius: 5%;
+        }
+
+        .robot_content p {
+            background: #ccc;
+            text-align: left;
+            max-width: 200px;
+        }
+
+        .my_content p {
+            background: #9EEA6A;
+            text-align: left;
+            max-width: 200px;
+        }
+
+        .robot,
+        .user {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h5>Gavin_robot</h5>
+        </div>
+        <div class="content">
+            <div class="robot_content">
+                <img class="robot" src="../img/timg.jpg" alt="">
+                <p>你好啊，无聊我可以陪你聊天哦!!!</p>
+            </div>
+
+        </div>
+        <div class="footer">
+            <input class="message" type="text">
+            <input class="submit" type="button" value="发送">
+        </div>
+    </div>
+</body>
+<script>
+    let content = document.getElementsByClassName('content')[0]
+    let submit = document.getElementsByClassName('submit')[0]
+    let message = document.getElementsByClassName('message')[0]
+
+
+    let sendMessage = () => {
+        let mes = message.value
+        let my_content = document.createElement('div')
+        my_content.className = "my_content"
+        let my_cont = `
+                <p>${mes}</p>
+                <img class="user" src="../img/3.jpg" alt="">`
+        my_content.innerHTML = my_cont
+        content.appendChild(my_content)
+        message.value = ''
+
+        Ajax.get("http://localhost:8000/api?mes=" + mes, calback)
+    }
+
+    let Ajax = {
+        get: function (url, fn) {
+            // XMLHttpRequest对象用于在后台与服务器交换数据   
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.onreadystatechange = function () {
+                // readyState == 4说明请求已完成
+                if (xhr.readyState == 4 && xhr.status == 200 || xhr.status == 304) {
+                    // 从服务器获得数据 
+                    fn.call(this, xhr.responseText);
+                }
+            };
+            xhr.send();
+        }
+    }
+    function calback(data) {
+        if (data) {
+            let robot_mes = JSON.parse(data).text
+            let robot_content = document.createElement('div')
+            robot_content.className = "robot_content"
+            let robot_cont = `
+                <img class="robot" src="../img/timg.jpg" alt="">
+                <p>${robot_mes}</p>`
+            robot_content.innerHTML = robot_cont
+            setTimeout(() => {
+                content.appendChild(robot_content)
+                content.scrollTop = content.scrollHeight;
+            }, 10)
+        } else {
+
+        }
+    }
+
+    //监听键盘的回车
+    document.body.addEventListener('keyup', function (event) {
+        if (event.keyCode == "13") {
+            sendMessage()
+        }
+    });
+
+    //当点击时滚动到最后面，显示最后一天消息
+    message.addEventListener('click', function () {
+        setTimeout(function () {
+            content.scrollTop = content.scrollHeight;
+        }, 200)
+    })
+
+    //监听当前发送按钮的点击事件
+    submit.addEventListener('click', sendMessage)
+</script>
+
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="travel.mapper.CityMapper">
+
+  <resultMap id="cityMap" type="City">
+    <id property="id" column="id"/>
+    <result property="name" column="name"/>
+    <result property="hot" column="hot"/>
+    <result property="keyword" column="keyword"/>
+    <result property="spell" column="spell"/>
+  </resultMap>
+  <select id="findCityByKeyword" resultMap="cityMap">
+    SELECT * from city WHERE keyword = #{keyword}
+  </select>
+
+  <select id="findCityByName" resultMap="cityMap">
+    SELECT * from city WHERE name LIKE "%"#{name}"%"
+  </select>
+
+  <select id="findCityById" resultMap="cityMap">
+    SELECT * from city WHERE id = #{id}
+  </select>
+
+  <select id="findHotCity" resultMap="cityMap">
+    SELECT * from city WHERE hot=TRUE
+  </select>
+
+  <select id="findAll" resultMap="cityMap">
+    SELECT * from city;
+  </select>
+
+</mapper>

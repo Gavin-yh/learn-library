@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="travel.mapper.CommentMapper">
+
+  <resultMap id="commentMap" type="Comment">
+    <id property="id" column="id"/>
+    <result property="text" column="text"/>
+    <collection property="images" ofType="CommentImage">
+      <result property="id" column="img_id"/>
+      <result property="url" column="url"/>
+    </collection>
+  </resultMap>
+
+  <sql id="selectComment">
+    SELECT
+      c.id,
+      c.text,
+      ci.id img_id,
+      ci.url
+    FROM comment c LEFT OUTER JOIN comment_image ci ON c.id = ci.comment_id
+  </sql>
+
+  <select id="findCommentById" resultMap="commentMap">
+    <include refid="selectComment"/>
+    WHERE c.id = #{id}
+  </select>
+
+  <select id="findCommentByAttractions" resultMap="commentMap">
+    <include refid="selectComment"/>
+    WHERE attractions_id = #{id}
+  </select>
+</mapper>

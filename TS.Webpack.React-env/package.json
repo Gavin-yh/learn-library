@@ -1,0 +1,47 @@
+{
+  "name": "webpack_env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "client:dev": "scripty",
+    "client:prod": "scripty",
+    "client:server": "scripty"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmilMan/TS.Webpack.React-env.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmilMan/TS.Webpack.React-env/issues"
+  },
+  "homepage": "https://github.com/SmilMan/TS.Webpack.React-env#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.1.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "json2ts": "^0.0.7",
+    "scripty": "^2.0.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-build-notifier": "^2.0.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2",
+    "yargs-parser": "^18.1.3"
+  }
+}

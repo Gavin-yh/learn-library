@@ -1,0 +1,174 @@
+{
+    "headerSwiper":[{
+        "id" : "01",
+        "imgUrl":"http://img1.qunarzz.com/piao/fusion/1812/d6/daa880b254940402.jpg_750x200_b114308a.jpg"
+    },{
+        "id" : "02",
+        "imgUrl" :"http://img1.qunarzz.com/piao/fusion/1811/31/da037478f37cf202.jpg_750x200_fe28d396.jpg"
+    },{
+        "id":"03",
+        "imgUrl":"http://img1.qunarzz.com/piao/fusion/1811/a8/cb43c4ac6c215d02.jpg_750x200_83dee994.jpg"
+    },{
+        "id":"04",
+        "imgUrl":"http://img1.qunarzz.com/piao/fusion/1811/a8/cb43c4ac6c215d02.jpg_750x200_83dee994.jpg"
+    },{
+        "id":"05",
+        "imgUrl":"http://img1.qunarzz.com/piao/fusion/1811/a8/cb43c4ac6c215d02.jpg_750x200_83dee994.jpg"
+    }],
+"iconList":[{
+    "id" :"06",
+        "url":"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "text":"景点门票"
+    },{
+        "id":"07",
+        "url":"http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+        "text":"一日游"
+    },{
+        "id":"08",
+        "url":"http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+        "text":"必游景点"
+    },{
+        "id":"09",
+        "url":"http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+        "text":"动植物园"
+    },{
+        "id":"10",
+        "url":"http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png",
+        "text":"城市观光"
+    },{
+        "id":"11",
+        "url":"http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png",
+        "text":"泡温泉"
+    },{
+        "id":"12",
+        "url":"http://img1.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png",
+        "text":"野生动物园"
+    },{
+        "id":"13",
+        "url":"http://img1.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png",
+        "text":"野生动物园"
+    },{
+        "id":"14",
+        "url":"http://img1.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png",
+        "text":"野生动物园"
+    }],
+    "weekendHot":[{
+            "id":"15",
+            "name":"德化九仙山",
+            "url":"http://img1.qunarzz.com/sight/p0/1504/cb/cbd992d4861cbcaf.water.jpg_250x250_ff878db5.jpg",
+            "text":"德化九仙山"
+        },{
+            "id":"16",
+            "name":"清源山",
+            "url":"http://img1.qunarzz.com/sight/p0/1501/88/88eaebdf8c0ac671.water.jpg_250x250_ac1daa78.jpg",
+            "text":"清源山"
+ 
+         },{
+            "id" :"17",
+            "name": "石狮世茂摩天轮",
+            "url":"http://img1.qunarzz.com/sight/p0/1701/48/48201ed52a31518ba3.img.jpg_250x250_2a09a5e9.jpg",
+            "text":"【泉州海西之眼】石狮世茂摩天轮"
+         },{
+            "id" :"18",
+            "name": "泉州海丝野生动物世界",
+            "url":"http://img1.qunarzz.com/sight/p0/1702/3f/3ffc2297280d414aa3.img.jpg_250x250_380f7aad.jpg",
+            "text":"泉州海丝野生动物世界"
+         },{
+            "id" :"19",
+            "name": "南安香草",
+            "url":"http://img1.qunarzz.com/sight/p0/1501/8b/8b1e9d648f923e68.water.jpg_250x250_1f452ec0.jpg",
+            "text":"南安香草世界"
+         },{
+            "id" :"20",
+            "name": "洛江石龙谷",
+            "url":"http://img1.qunarzz.com/sight/p0/1705/88/88e65ed5da3ff5d7a3.img.jpg_250x250_cd1a0772.jpg",
+            "text":"洛江石龙谷森林游乐园"
+         },{
+            "id" :"21",
+            "name": "崇武古城",
+            "url":"http://img1.qunarzz.com/sight/p0/1411/97/1f50d2cb9964b3d0ca21b51587060961.water.jpg_250x250_4640e63d.jpg",
+            "text":"崇武古城"
+         },{
+            "id" :"22",
+            "name": "泉州少林",
+            "url":"http://img1.qunarzz.com/sight/p0/1611/77/772d260d9e4903f2a3.water.jpg_250x250_1e21649f.jpg",
+            "text":"泉州少林寺"
+         }
+    ],
+    "recomment":[{
+                "id" : "23",
+                "url" : "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg",
+                "name" : "故宫",
+                "comment" :"343046条评论",
+                "local":"城东区"
+            },{
+                "id" : "24",
+                "url" : "http://img1.qunarzz.com/sight/p0/1508/fe/434ee530e21f1c11bad088e8cc8d5e93.water.jpg_200x200_912ce9f4.jpg",
+                "name" : "鸟巢",
+                "comment" :"343046条评论",
+                "local":"奥林匹克公园内"
+            },{
+                "id" : "25",
+                "url" : "http://img1.qunarzz.com/sight/p0/1510/8e/8eea8eb6f41698290.img.jpg_200x200_595cfa1d.jpg",
+                "name" : "金隅凤山温泉",
+                "comment" :"343046条评论",
+                "local":"昌平区"
+            },{
+                "id" : "26",
+                "url" : "http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+                "name" : "北京欢乐谷",
+                "comment" :"343046条评论",
+                "local":"朝阳区"
+            },{
+                "id" : "27",
+                "url" : "http://img1.qunarzz.com/sight/p0/1411/43/dea8b51719a4a69b68777baa68c146e4.water.jpg_200x200_8da8cebe.jpg",
+                "name" : "春晖园温泉度假村",
+                "comment" :"343046条评论",
+                "local":"顺义区"
+            },{
+                "id" : "28",
+                "url" : "http://img1.qunarzz.com/sight/p0/201303/04/50b65ba27d711f92c8d65eac.jpg_200x200_633f68b7.jpg",
+                "name" : "太平洋海底世界",
+                "comment" :"343046条评论",
+                "local":"昌平区"
+            },{
+                "id" : "29",
+                "url" : "http://img1.qunarzz.com/sight/p0/1602/67/67feeab24cfc82bb90.water.jpg_200x200_af2a01b1.jpg",
+                "name" : "八达岭长城",
+                "comment" :"343046条评论",
+                "local":"海淀区"
+            },{
+                "id" : "30",
+                "url" : "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_200x200_2458ffb2.jpg",
+                "name" : "北京海洋馆",
+                "comment" :"343046条评论",
+                "local":"延庆县"
+            } 
+    ],
+    "weekendGo":[{
+                "id":"31",
+                "url":"http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg",
+                "title":"京城周末撒欢",
+                "recom":"在帝都过周末，不仅仅是城中游！"
+            },{
+                "id":"32",
+                "url":"http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
+                "title":"京城有好泉",
+                "recom":"细数北京温泉，温暖你的冬天"
+            },{
+                "id":"33",
+                "url":"http://img1.qunarzz.com/sight/source/1811/7e/476589267ebb41.jpg_r_640x214_bf599709.jpg",
+                "title":"京城溜娃必去",
+                "recom":"德智体美劳全面发展的亲子日，这些地方该去看看…"
+            },{
+                "id":"34",
+                "url":"http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
+                "title":"帝都必打卡",
+                "recom":"来北京必去的景点非这些地方莫属"
+            },{
+                "id":"35",
+                "url":"http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
+                "title":"寻找北京的皇城范儿",
+                "recom":"数百年的宫廷庙宇，至今依旧威严霸气"
+            }]
+}

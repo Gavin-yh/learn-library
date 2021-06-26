@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .el{
+            --arcColor:yellow;
+            --elUnit: 500px;
+            height: var(--elUnit);
+            width: var(--elUnit);
+            --background-canvas: (ctx, gemo) => {
+                ctx.fillStyle = `var(--arcColor)`;
+                ctx.lineWidth = 4;
+                ctx.beginPath();
+                ctx.arc(200, 300, 70, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.closePath();
+            };
+            background:paint(background-canvas);
+        }
+    </style>
+</head>
+<body>
+    <div class="el"></div>
+    <script>
+        CSS.paintWorklet.addModule("./arc.js");
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="travel.mapper.AttractionsMapper">
+
+  <resultMap id="attractionsMap" type="Attractions">
+    <id property="id" column="id"/>
+    <result property="name" column="name"/>
+    <result property="recom" column="recom"/>
+    <collection property="images" column="image" ofType="AttractionsImage">
+      <id property="id" column="img_id"/>
+      <result property="type" column="type"/>
+      <result property="url" column="url"/>
+    </collection>
+  </resultMap>
+
+  <sql id="selectAttractions">
+    SELECT
+      a.id,
+      a.name,
+      a.recom,
+      ai.type,
+      ai.url,
+      ai.id img_id
+    FROM attractions a LEFT OUTER JOIN attractions_image ai ON ai.id = a.id
+  </sql>
+
+  <select id="findAttractionById" resultMap="attractionsMap">
+    <include refid="selectAttractions"/>
+    WHERE a.id = #{id}
+  </select>
+
+  <select id="findAttractionByCity" resultMap="attractionsMap">
+    <include refid="selectAttractions"/>
+    WHERE a.city_id = #{cityId}
+  </select>
+  <select id="findWeekendHot" resultMap="attractionsMap">
+    <include refid="selectAttractions"/>
+    WHERE weekendHot = true
+  </select>
+
+  <select id="findRecomment" resultMap="attractionsMap">
+    <include refid="selectAttractions"/>
+    WHERE recomment = true
+  </select>
+
+  <select id="findWeekendGo" resultMap="attractionsMap">
+    <include refid="selectAttractions"/>
+    WHERE weekendGo = true
+  </select>
+
+  <select id="findByName" resultMap="attractionsMap">
+    <include refid="selectAttractions"/>
+    WHERE a.name = #{name}
+  </select>
+  <select id="findAll" resultMap="attractionsMap">
+    <include refid="selectAttractions"/>
+  </select>
+</mapper>

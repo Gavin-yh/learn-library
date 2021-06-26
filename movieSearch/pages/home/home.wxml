@@ -1,0 +1,8 @@
+<view class='container'>
+   <view class='search-movie' bindtap = 'bindTosearch'>
+      <icon class='search-icon' type='search' size='16'></icon>
+      <text class='search-text' >搜索电影</text>
+   </view>
+   <view class='session-page'></view>
+   <view class='session-page'></view>
+</view>

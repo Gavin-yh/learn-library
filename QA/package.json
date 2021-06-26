@@ -1,0 +1,32 @@
+{
+  "name": "qa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "unit": "karma start",
+    "e2e": "node ./test/e2e/index.js",
+    "perf": "phantomjs ./test/performance/index.js",
+    "ui": "backstop test",
+    "service": "node ./mochaRunner.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "backstopjs": "^4.3.4",
+    "express": "^4.17.1",
+    "jasmine-core": "^3.5.0",
+    "karma": "^4.4.1",
+    "karma-coverage": "^2.0.1",
+    "karma-jasmine": "^2.0.1",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "mocha": "^6.2.2",
+    "mochawesome": "^4.1.0",
+    "phantomjs": "^2.1.7",
+    "selenium-webdriver": "^4.0.0-alpha.5",
+    "supertest": "^4.0.2",
+    "webpage": "^0.3.0"
+  }
+}

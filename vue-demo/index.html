@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <p>{{name}}</p>
+        <p m-text = "name"></p>
+        <p>{{age}}</p>
+        <p>{{doubleAge}}</p>
+        <input type="text" m-model = "name">
+        <button @click="changeName">呵呵</button>
+        <div m-html = "html"></div>
+    </div>
+   <script src="./src/mvue.js"></script> 
+   <script>
+       const app = new mVue({
+           el: "#app",
+           data: {
+              name: "i am Gavin" ,
+              age: 12,
+              doubleAge: 33,
+              html: "<button>我是一个按钮</button>"
+           },
+           created() {
+               console.log("开始")
+               setTimeout(() => {
+                  this.name = "测试成功" 
+               }, 1500);
+           },
+           methods: {
+               changeName() {
+                   this.name = "hello"
+                   this.age = 1
+               }
+           }
+       })
+   </script>
+</body>
+</html>

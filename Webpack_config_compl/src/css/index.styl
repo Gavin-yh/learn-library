@@ -1,0 +1,348 @@
+// iconfont
+// @import '../font/iconfont.css'
+
+
+// 全局变量
+CONTENMAXW = 1200PX
+CONTENMINW = 900PX
+
+// icon默认样式
+.icon 
+    width 1em
+    height 1em
+    vertical-align -0.15em
+    fill currentColor
+    overflow hidden
+
+// 全局title样式
+.g-title-wrap
+    width 100%
+    color #384358
+    padding-top 8vw
+    text-align center
+    h1
+        font-size 48px
+        font-weight 800
+    span 
+        font-size 21px
+        font-weight 300
+
+// 全局content样式
+.g-wrap-box
+    position relative
+    width 100%
+    min-width CONTENMINW
+    .g-content-wrap
+        margin 0 auto
+        max-width CONTENMAXW
+        min-width CONTENMINW
+        padding 0 10px
+        .g-main-wrap
+            padding 80px 0 40px 0
+
+// 导航菜单公共样式
+.navs
+    li 
+        float left
+        margin-left 40px
+        a
+            text-decoration none
+            color rgb(230,230,230)
+            &:hover
+                color white
+        &:after
+            content ''
+            display block
+            clear both
+
+/* 轮播图 */
+.slider-wrap
+    width 100%
+    max-width 541px
+    overflow hidden
+    position relative
+    .sliderShowMax
+        .swiper-slide
+            width 100%
+            height 100%
+            img
+                width 100%
+                height 100%
+        .swiper-pagination>span
+            background #aaa
+
+
+// 主要样式部分
+.wrapper
+    background white
+    width 100%
+    // 顶部banner
+    .head-wrap
+        .bg-img
+            min-width CONTENMINW
+            width 100%
+        .content-wrap
+            position relative
+            z-index 5
+            position absolute
+            box-sizing border-box
+            left 50%
+            transform translateX(-50%)
+            top 0
+            margin 0 auto
+            width 100%
+            display flex
+            align-items center
+            flex-direction column
+            justify-content center
+            height 100%
+            @media screen and (max-width: CONTENMINW)
+                left 0
+                transform translateX(0%)
+            .title-wrap
+                position absolute
+                top 0
+                padding 0 10px
+                left 0
+                width 100%
+                display flex
+                height 70px
+                align-items center
+                justify-content space-between
+                .logo-wrap
+                    font-size 14px
+                    img 
+                        width 93px
+                        cursor pointer
+                        margin-right 20px
+            .poster-wrap
+                width 100%
+                display flex
+                align-items center
+                justify-content space-between
+                color white
+                img
+                    width 45%
+                    min-width 350px
+                .info
+                    width 39%
+                    h2
+                        font-size 40px
+                        margin-bottom 10px
+                    p
+                        font-size 22px
+                        opacity 0.9
+                        font-weight 300
+                        line-height 36px
+    
+    // 校园app 
+    .app-wrap
+        .g-content-wrap
+            .app-main
+                width 100%
+                display flex
+                justify-content space-between
+                .middle-container
+                    width 307px
+                .app-pages-container
+                    width 28%
+                    padding 40px 0
+                    .app-page-item
+                        position relative
+                        padding 12px 80px 6px 6px
+                        box-sizing border-box
+                        text-align right
+                        margin-bottom 40px
+                        cursor pointer
+                        &:hover
+                            background rgb(250,250,250);
+                            border-radius 10px
+                        .icon-wrap
+                            position absolute
+                            right 6px
+                            top 6px
+                            display flex
+                            justify-content center
+                            align-items center
+                            width 42px
+                            height 42px
+                            background #F0F5FF
+                            border-radius 50%
+                            font-size 22px
+                        h3
+                            font-weight 600
+                            font-size 18px
+                            margin-bottom 10px
+                            color #535252
+                            &.app-active
+                                color #3468FE
+                        p
+                            width 100%
+                            font-size 15px
+                            line-height 28px
+                            height 56px
+                            color #6F6F6F
+                            font-weight 300
+                            display -webkit-box
+                            -webkit-box-orient vertical
+                            -webkit-line-clamp 2
+                            overflow hidden
+                .right-container
+                    .app-page-item
+                        padding 12px 6px 6px 80px
+                        text-align left
+                        .icon-wrap
+                            left 6px
+                            right auto
+    // 学生财务管理
+    .finance-wrap
+        position relative
+        .bg-img-wrap
+            position absolute
+            left 0
+            top 200px
+            width 30%
+            min-width 400px
+            img
+                width 100%
+            &.minApp-img
+                bottom 0
+                top auto
+                right 0
+                left auto
+        .g-content-wrap
+            position relative
+            z-index 9
+            .finance-container
+                display flex
+                align-items center
+                justify-content space-between
+                h2
+                    font-size 34px
+                    font-weight 800
+                    color #535252
+                .img-wrap,
+                .describe-wrap
+                    width 50%
+                .describe-wrap
+                    padding-left 150px
+                    .info
+                        margin-top 20px
+                        color #6F6F6F
+                        font-size 15px
+                        line-height 30px
+                        display -webkit-box
+                        -webkit-box-orient vertical
+                        -webkit-line-clamp 5
+                        overflow hidden
+                    .tags-list
+                        margin-top 20px
+                        color #6F6F6F
+                        font-size 16px
+                        line-height 40px
+                        li
+                            width 50%
+                            box-sizing border-box
+                            display inline-flex
+                            align-items center
+                            .icon
+                                background none
+                                font-size 30px
+                                margin-right 8px
+                            span 
+                                flex 1
+                                overflow hidden
+                                text-overflow ellipsis
+                                white-space nowrap
+            .bottom-container
+                margin-top 80px
+                .img-wrap
+                    display flex
+                    justify-content flex-end
+                li
+                    width 100% !important
+    // 学生信息管理
+    .bg-img-content
+        margin-top 80px
+        padding-top 120px
+        background-image url('../image/学生信息背景.png')
+        background-size cover
+        background-repeat no-repeat
+        background-position center
+        &.teaching-wrap
+            background-image url('../image/教学背景1.png')
+            padding-bottom 10px
+            .teaching-title
+                color white
+            .skill-item
+                width 31.2% !important
+            .information-img
+                margin-bottom 0 !important
+            .footer-wrap
+                width 100%
+                position absolute
+                bottom 0
+                background rgba(1,29,61,0.3)
+                height 65px
+                .g-content-wrap
+                    display flex
+                    height 100%
+                    justify-content space-between
+                    align-items center
+                    font-size 14px
+                    .info
+                        color white
+                    .navs
+                        font-size 14px
+        .information-title
+            color white
+        .information-main
+            max-width 1100px
+            margin 0 auto
+            display flex
+            flex-direction column
+            justify-content center
+            margin-bottom 80px
+            .information-img
+                width 100%
+                margin-top 40px
+                margin-bottom -80px
+            .skill-list-wrap
+                width 100%
+                .aline-items
+                    margin-bottom 30px
+                    display flex
+                    flex-wrap wrap
+                    justify-content space-between
+                .skill-item
+                    font-size 15px
+                    width 26%
+                    color white
+                    display flex
+                    .icon
+                        background none
+                        font-size 20px
+                        margin-right 8px
+                    .info
+                        flex 1
+                        h6
+                            font-weight 600
+                            margin-bottom 10px
+                        p
+                            line-height 28px
+                            display -webkit-box
+                            -webkit-box-orient vertical
+                            -webkit-line-clamp 4
+                            overflow hidden
+                    
+
+
+            
+        // .bg-img
+        //     width 100%
+        //     height 1082px
+        // .g-content-wrap
+            // position absolute
+            // top 0
+            // left 50%
+            // transform translateX(-50%)

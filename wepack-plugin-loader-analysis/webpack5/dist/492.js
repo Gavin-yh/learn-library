@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[492],{492:(w,p,s)=>{"use strict";s.r(p),s.d(p,{default:()=>c});const c="webpack 5"}}]);

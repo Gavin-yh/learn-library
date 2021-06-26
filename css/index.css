@@ -1,0 +1,27 @@
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+:root{
+    --bgColor: #000;
+    --fontColor: #fff;
+}
+
+body{
+    background: var(--bgColor)
+}
+
+.nav{
+    color: var(--fontColor)
+}
+
+:--heading {
+  margin: 0;
+  color: var(--fontColor)
+}
+
+a {
+  color: rgb(0 0 100% / 90%);
+
+  &:hover {
+    color: rebeccapurple;
+  }
+}
