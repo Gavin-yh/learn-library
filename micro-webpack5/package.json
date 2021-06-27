@@ -3,5 +3,10 @@
   "private": true,
   "devDependencies": {
     "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "init": "lerna init",
+    "build": "lerna run --parallel build",
+    "serve": "lerna run --parallel serve"
   }
 }
